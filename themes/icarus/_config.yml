@@ -15,15 +15,6 @@ sidebar:
     - recent_posts
   right: []
 
-# 导航菜单
-navbar:
-  menu:
-    home: /
-    archives: /archives
-    categories: /categories
-    tags: /tags
-    about: /about
-
 # 文章摘要
 article:
   excerpt: true

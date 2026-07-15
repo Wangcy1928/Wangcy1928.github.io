@@ -64,3 +64,9 @@ search:
     no_result: 'No results for'
     untitled: '(Untitled)'
     empty_preview: '(No preview)'
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  关于: /about

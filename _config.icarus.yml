@@ -101,6 +101,7 @@ head:
         - ''
     # URL or path to the website's RSS atom.xml
     rss: 
+    - '<link rel="stylesheet" href="/css/custom.css">'
 # Page top navigation bar configurations
 navbar:
     # Navigation menu items
@@ -130,6 +131,8 @@ footer:
         Download on GitHub:
             icon: fab fa-github
             url: https://github.com/ppoffice/hexo-theme-icarus
+    script:
+        - '<script src="/js/custom.js"></script>'
 # Article related configurations
 article:
     # Code highlight settings
@@ -356,7 +359,7 @@ plugins:
     # http://outdatedbrowser.com/
     outdated_browser: false
     # Enable PJAX
-    pjax: true
+    pjax: false
     # Show a progress bar at top of the page on page loading
     progressbar: true
     # Statcounter statistics

@@ -1,7 +1,7 @@
 ---
 title: 2026WUSTACM选拔赛第一场
 date: 2026-07-14 16:44:28
-categories: [校内选拔, 比赛总结]
+categories: [比赛总结, 校内选拔]
 tags: [ACM, 2026, 复盘]
 ---
 

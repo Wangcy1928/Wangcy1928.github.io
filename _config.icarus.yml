@@ -106,11 +106,11 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        首页: / || home
-        归档: /archives || archives
-        分类: /categories || categories
-        标签: /tags || tags
-        关于: /about || about
+        首页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        关于: /about
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
@@ -374,6 +374,8 @@ plugins:
     twitter_conversion_tracking:
         # Twitter Pixel ID
         pixel_id: 
+    search:
+        type: insight
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:

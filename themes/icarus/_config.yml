@@ -1,0 +1,38 @@
+# Icarus Theme Configuration
+# https://github.com/ppoffice/hexo-theme-icarus
+
+# 主题版本
+version: 5.0.0
+
+# 主题变体
+variant: default
+
+# 侧边栏位置
+sidebar:
+  left:
+    - profile
+    - categories
+    - recent_posts
+  right: []
+
+# 导航菜单
+navbar:
+  menu:
+    home: /
+    archives: /archives
+    categories: /categories
+    tags: /tags
+    about: /about
+
+# 文章摘要
+article:
+  excerpt: true
+  read_more: true
+
+# 评论系统
+comments:
+  type: none
+
+# 搜索
+search:
+  type: insight

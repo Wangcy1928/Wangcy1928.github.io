@@ -1,4 +1,5 @@
 ---
-title: categories
+title: 分类
+type: categories
 date: 2026-07-14 20:43:03
 ---

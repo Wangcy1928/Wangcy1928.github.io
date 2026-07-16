@@ -100,6 +100,7 @@ head:
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - ''
         - '<link rel="stylesheet" href="/css/custom.css">'
+        - '<script src="/js/custom.js"></script>'
     # URL or path to the website's RSS atom.xml
     rss: ""
 # Page top navigation bar configurations
@@ -143,7 +144,7 @@ article:
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
-        fold: unfolded
+        fold: Unfolded
     # Whether to show estimated article reading time
     readtime: true
     # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
@@ -168,9 +169,17 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+    type: giscus
+    repo: Wangcy1928/blog-comments
+    repoId: R_kgDOTacQyA
+    category: General
+    categoryId: DIC_kwDOTacQyM4DBUuB
+    mapping: pathname
+    reactionsEnabled: '1'
+    emitMetadata: '0'
+    inputPosition: bottom
+    theme: light
+    lang: zh-CN
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -194,24 +203,8 @@ donates:
         type: patreon
         # URL to the Patreon page
         url: ''
-    # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
-    # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    type: sharethis
-    # URL to the ShareThis share plugin script
-    install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:

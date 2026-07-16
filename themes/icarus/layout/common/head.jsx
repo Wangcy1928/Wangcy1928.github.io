@@ -175,6 +175,27 @@ module.exports = class extends Component {
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script> : null}
 
             {followItVerificationCode ? <meta name="follow.it-verification-code" content={followItVerificationCode} /> : null}
+        
+                        <script dangerouslySetInnerHTML={{ __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.highlight').forEach(function(block) {
+                    if (block.scrollHeight < 350) {
+                        block.classList.add('short');
+                        return;
+                    }
+                    if (block.querySelector('.fold-toggle')) return;
+                    var btn = document.createElement('button');
+                    btn.className = 'fold-toggle';
+                    btn.textContent = '展开 ▾';
+                    block.appendChild(btn);
+                    btn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        var isExpanded = block.classList.toggle('expanded');
+                        btn.textContent = isExpanded ? '折叠 ▴' : '展开 ▾';
+                    });
+                });
+            });
+            ` }} />
         </head>;
     }
 };

@@ -11,12 +11,42 @@ tags: [动态规划, LIS, LCS, 最大子段和]
 
 在动态规划中，**子数组（子串）、子段、子序列、子集**是四个极易混淆的概念。
 
-| 概念 | 是否连续 | 是否保持顺序 | 是否允许为空 |
-| :--- | :--- | :--- | :--- | :--- |
-| **子数组（子串）** | 必须连续 | 保持 | 通常非空 |
-| **子段** | 必须连续 | 保持 | 通常非空 | 
-| **子序列** | 可以不连续 | 保持 | 可以为空 |
-| **子集** | 不要求连续 | 不要求 | 可以为空 | 
+<table>
+  <thead>
+    <tr>
+      <th>概念</th>
+      <th>是否连续</th>
+      <th>是否保持顺序</th>
+      <th>是否允许为空</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>子数组（子串）</strong></td>
+      <td>✅ 必须连续</td>
+      <td>✅ 保持</td>
+      <td>❌ 通常非空</td>
+    </tr>
+    <tr>
+      <td><strong>子段</strong></td>
+      <td>✅ 必须连续</td>
+      <td>✅ 保持</td>
+      <td>❌ 通常非空</td>
+    </tr>
+    <tr>
+      <td><strong>子序列</strong></td>
+      <td>❌ 可以不连续</td>
+      <td>✅ 保持</td>
+      <td>✅ 可以为空</td>
+    </tr>
+    <tr>
+      <td><strong>子集</strong></td>
+      <td>❌ 不要求连续</td>
+      <td>❌ 不要求</td>
+      <td>✅ 可以为空</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -59,7 +89,7 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int t;
+    int t = 1;
     //cin >> t;
     while(t--) solve();
     return 0;
@@ -95,7 +125,7 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int t;
+    int t = 1;
     //cin >> t;
     while(t--) solve();
     return 0;
@@ -169,13 +199,14 @@ using namespace std;
 void solve() {
     int n;
     cin >> n;
-    vector<vector<int>> a(N,vector<int>(n,0)),dp = a;
+    vector<vector<int>> a(n,vector<int>(n,0));
     for(int i = 0;i < n;++i) {
         for(int j = 0;j < i;++j) cin >> a[i][j];
     }
+    vector<vector<int>> dp = a;
     for(int i = n - 2;i >= 0;--i) {
         for(int j = 0;j <= i;++j) {
-            dp[i][j] = a[i][j] + max(dp[i + 1][j + 1]);
+            dp[i][j] = a[i][j] + max(dp[i + 1][j + 1], dp[i + 1][j]);
         }
     }
     cout << dp[0][0] << "\n";
@@ -228,7 +259,7 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    int t;
+    int t = 1;
     //cin >> t;
     while(t--) solve();
     return 0;

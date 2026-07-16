@@ -63,3 +63,6 @@ deploy:
   type: git
   repo: https://github.com/Wangcy1928/Wangcy1928.github.io.git
   branch: main
+marked:
+  gfm: true
+  tables: true

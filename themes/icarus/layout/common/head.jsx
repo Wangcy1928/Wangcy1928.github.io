@@ -175,8 +175,9 @@ module.exports = class extends Component {
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script> : null}
 
             {followItVerificationCode ? <meta name="follow.it-verification-code" content={followItVerificationCode} /> : null}
-        
-                        <script dangerouslySetInnerHTML={{ __html: `
+
+            {/* Code folding */}
+            <script dangerouslySetInnerHTML={{ __html: `
             document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('.highlight').forEach(function(block) {
                     if (block.scrollHeight < 350) {

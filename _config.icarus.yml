@@ -107,7 +107,7 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        首页: /
+        首页: /welcome.html
         归档: /archives
         分类: /categories
         标签: /tags

@@ -18,7 +18,6 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: ':lang'
-skip_render: null
 new_post_name: ':title.md'
 default_layout: post
 titlecase: false
@@ -42,10 +41,6 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: '-date'
 default_category: uncategorized
 category_map: null
 tag_map: null
@@ -66,3 +61,5 @@ deploy:
 marked:
   gfm: true
   tables: true
+skip_render:
+  - '*.html'

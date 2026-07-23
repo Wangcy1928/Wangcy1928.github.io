@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wcy 的博客</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(/images/bg.jpg) center/cover no-repeat;
+            font-family: 'Segoe UI', 'PingFang SC', sans-serif;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .hero {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 4px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-top: 16px;
+        }
+        .hero a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 40px;
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border: 1px solid rgba(255,255,255,0.25);
+            transition: background 0.3s;
+        }
+        .hero a:hover {
+            background: rgba(255,255,255,0.35);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🚀 欢迎来到 Wcy 的博客</h1>
+        <p>算法 · 竞赛 · 成长</p>
+        <a href="/archives/">📖 进入博客</a>
+    </div>
+</body>
+</html>

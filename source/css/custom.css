@@ -1,13 +1,13 @@
 /* 代码块折叠样式 */
 .highlight {
     position: relative;
-    max-height: 300px;           /* 默认只显示 300px 高度，超出部分隐藏 */
+    max-height: 300px;
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
 
 .highlight.expanded {
-    max-height: none;            /* 展开时恢复完整高度 */
+    max-height: none;
 }
 
 .highlight .fold-toggle {
@@ -29,7 +29,6 @@
     background: rgba(0, 86, 179, 0.95);
 }
 
-/* 如果代码块高度不足 300px，不显示折叠按钮 */
 .highlight.short .fold-toggle {
     display: none;
 }
@@ -41,21 +40,23 @@ figure.highlight .highlight-body {
     background-color: #2d2d2d !important;
 }
 
-/* 如果行号区域背景也要改 */
 figure.highlight .gutter,
 figure.highlight .gutter .line {
     background-color: #1e1e1e !important;
 }
 
-/* 代码区域背景（覆盖 .code td 的背景） */
 figure.highlight .code,
 figure.highlight .code .line {
     background-color: #2d2d2d !important;
 }
 
-/* 表格本身背景 */
 figure.highlight table,
 figure.highlight tbody,
 figure.highlight tr {
     background-color: transparent !important;
+}
+
+/* 代码字体统一为 Consolas */
+code, pre, .highlight, .hljs, .highlight code, .highlight pre, .code, .gutter, .line, .code .line {
+    font-family: 'Consolas', 'Courier New', monospace !important;
 }

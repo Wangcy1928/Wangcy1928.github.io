@@ -99,8 +99,6 @@ head:
         # Meta tag specified in <attribute>=<value> style
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - ''
-        - '<link rel="stylesheet" href="/css/custom.css">'
-        - '<script src="/js/custom.js"></script>'
     # URL or path to the website's RSS atom.xml
     rss: ""
 # Page top navigation bar configurations

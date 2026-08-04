@@ -66,6 +66,8 @@ figure.highlight .gutter .line {
 }
 
 figure.highlight .code,
+figure.highlight .code pre,
+figure.highlight .code .hljs,
 figure.highlight .code .line {
     background-color: #f0f4f8 !important;
 }
@@ -73,8 +75,14 @@ figure.highlight .code .line {
 /* 表格本身背景 */
 figure.highlight table,
 figure.highlight tbody,
-figure.highlight tr {
+figure.highlight tr,
+figure.highlight td {
     background-color: transparent !important;
+}
+
+/* 覆盖 highlight.js 主题的背景色 */
+.hljs {
+    background: #f0f4f8 !important;
 }
 
 /* 代码字体统一为 Consolas */

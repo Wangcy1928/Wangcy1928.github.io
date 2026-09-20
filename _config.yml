@@ -68,3 +68,4 @@ marked:
 skip_render:
   - 'index.html'
   - 'welcome.html'
+  - 'vue-demo/**'

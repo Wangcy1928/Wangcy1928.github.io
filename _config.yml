@@ -51,7 +51,7 @@ updated_option: mtime
 per_page: 10
 pagination_dir: page
 index_generator:
-  path: 'blog'
+  path: ''
   per_page: 10
   order_by: -date
 include: null
@@ -66,6 +66,4 @@ marked:
   gfm: true
   tables: true
 skip_render:
-  - 'index.html'
-  - 'welcome.html'
   - 'vue-demo/**'
